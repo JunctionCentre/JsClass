@@ -1,0 +1,33 @@
+body{
+    font-family: "仿宋";
+    margin:0;
+    padding:0;
+}
+
+.container{
+    margin:auto;
+    width:60%;
+    padding:3%;
+    background:#ffffffcc;
+}
+
+.background{
+    background-image:url("../img/wave.jpg");
+}
+
+.name{
+    font-family: "黑体";
+    font-size:64px;
+}
+.education{
+    border-collapse: collapse;
+}
+
+h1{
+    font-family: "黑体";
+}
+h3{
+    background:#5deeeecc;
+    font-family:"黑体";
+    padding:5px 0px 5px 20px;
+}
