@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    height:50px;
+    width:100%;
+    background: #444444;
+}
+.menu{
+    height:120px;
+    width:100%;
+    background: #0061AE;
+}
+.vpic{
+    margin-bottom:75px;
+}
+.picnews{
+    height:300px;
+    background: #AAAAAA;
+    padding:3% 0 3% 0;
+    margin-bottom:75px;
+}
+.news{
+    height:400px;
+    background: #AAAAAA;
+    padding:3% 0 3% 0;
+    margin-bottom:75px;
+}
+.footer{
+    clear:both;
+    height:300px;
+    width:100%;
+    background: #0061AE;
+}
+
+.sector{
+    height:100%;
+    background: #ffffff;
+    /* padding:0 2% 0 2%; Why no enough space? */
+    float:left;
+}
+.picnews>.sector{
+    width:23%;
+    margin-left:1%;
+    margin-right:1%;
+    background-image: url(Pic3.jpg);
+}
+.news>.sector{
+    width:27%;
+    margin-left:3%;
+    margin-right:3%;
+}
+
+.article{
+    width:94%;
+    height:30%;
+    background: #cfcfcf;
+    margin:3%;
+}
+
+.picbtn{
+    height:60px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* repeat(1fr,n) Why new line? */
+    text-align: center;
+    margin-bottom:75px;
+
+}
+.picbtn>div{
+    background: #00ffff;
+}
+
+.picwall{
+    height:400px;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom:75px;
+}
