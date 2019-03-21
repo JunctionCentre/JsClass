@@ -60,23 +60,35 @@ body{
 }
 
 .picbtn{
-    height:60px;
+    height:140px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     /* repeat(1fr,n) Why new line? */
-    text-align: center;
     margin-bottom:75px;
-
 }
-.picbtn>div{
-    background: #00ffff;
+.picbtn>div:nth-child(1n){
+    background-image: url(Btn1.jpg);
+}
+.picbtn>div:nth-child(2n){
+    background-image: url(Btn2.jpg);
+}
+.picbtn>div:nth-child(3n){
+    background-image: url(Btn3.jpg);
 }
 
-.picwall{
-    height:400px;
-    width:100%;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    margin-bottom:75px;
+
+.lightblue{
+    background-color:powderblue;
+}
+.purple{
+    background-color:plum;
+}
+.pink{
+    background-color:pink;
+}
+.green{
+    background-color:aquamarine;
+}
+.darkblue{
+    background-color:royalblue;
 }
