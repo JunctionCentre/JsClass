@@ -67,8 +67,7 @@ body{
 .picbtn{
     height:140px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* repeat(1fr,n) Why new line? */
+    grid-template-columns: repeat(9,1fr);
     margin-bottom:75px;
 }
 .picbtn>div:nth-child(1n){

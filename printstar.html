@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS*阵</title>
+    <script>
+        function star(){
+            let n = f.getN.value;
+            let demo = "";
+            for(let i=1;i<=n;i++){
+                for(let j=0;j<n-i;j++){
+                    demo += "—";
+                }
+                for(let j=0;j<2*i-1;j++){
+                    demo += "@";
+                }  
+                demo += "<br>";              
+            }
+            for(let i=n-1;i>0;i--){
+                for(let j=0;j<n-i;j++){
+                    demo += "—";
+                }
+                for(let j=0;j<2*i-1;j++){
+                    demo += "@";
+                }  
+                demo += "<br>";              
+            }
+            document.write(demo);
+            document.write("<br>刷新页面重新输入。<br>换用全角横线和@符号是因为*符号并不水平居中，网页上看起来不如CMD里好看。")
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+        请输入正整数：
+        <input type="number" name="getN">
+        <input type="button" name="cmd" value="确定" onclick="star()">
+    </form>
+    <div name="demo"></div>
+</body>
+</html>
