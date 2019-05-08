@@ -45,7 +45,7 @@ window.onload = function() {
     function autoPlay () {
         timer = setInterval(function () {
             animate(1);
-        },1000);
+        },2500);
     }
     autoPlay();
     container.onmouseenter = function () {

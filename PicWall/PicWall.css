@@ -1,3 +1,7 @@
+div{
+    transition: 0.8s;
+}
+
 #container {
     position: relative;
     width: 800px;
