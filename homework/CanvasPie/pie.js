@@ -36,7 +36,7 @@ for(i=0;i<data.length;i++){
 }
 
 function dgr(x,y){
-    // console.log(x+" "+y)
+    console.log(x+" "+y)
     if(x>0&&y>=0){
         return Math.atan(y/x);
     }
@@ -91,5 +91,5 @@ document.addEventListener('mousemove',function(e){
             cur = cur+Math.PI*2*data[i].value;
         }
     }
-    // console.log(Math.atan((e.clientY-ch)/(e.clientX-cw)));
+    console.log(Math.atan((e.clientY-ch)/(e.clientX-cw)));
 });
