@@ -1,0 +1,27 @@
+<!-- ejs文件 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>百度_上海对外经贸大学吧</title>
+  <link rel="shortcut icon" href="#" />
+</head>
+<body>
+    当前页码：<%= pg %><br>
+    <form action="http://localhost:3000/jump">跳转页码：<input type="number" name="page"><input type="submit" value="跳转"></button></form>
+    <table>
+        <tr>
+            <th>标题</th>
+            <th>操作</th>
+        </tr>
+        <% for(var i=0;i<data.length;i++){ %>
+            <tr>
+                <td><%=data[i].title%></td>
+                <td>
+                    <a href= <%= 'http://tieba.baidu.com' + data[i].href %> target="view_window" > 跳转 </a>
+                </td>
+            </tr>
+        <% } %>
+    </table>  
+</body>
+</html>
